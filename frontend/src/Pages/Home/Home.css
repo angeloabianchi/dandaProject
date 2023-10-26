@@ -1,0 +1,17 @@
+.HomeContainer {
+    width: 100%;
+    overflow: hidden;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ImageContainer {
+    width: 33%;
+    height: 50%;
+}
+
+.projectImage {
+    width: 300px;
+}
