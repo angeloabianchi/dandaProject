@@ -2,6 +2,7 @@ import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home/Home';
+import Project from './Pages/Project/Project';
 import About from './Pages/About/About';
 import Contacts from './Pages/Contacts/Contacts'
 import {
@@ -26,6 +27,7 @@ const App = () => {
               <Route exact path="/" element={<Home/>} />
               <Route exact path="/about" element={<About />} />
               <Route exact path="/contacts" element={<Contacts />} />
+              <Route exact path="/project/:id" element={<Project />} />
             </Routes>
           </main>
         </div>

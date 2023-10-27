@@ -1,21 +1,44 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
+import { initialFetch } from '../../Components/DataFetch/DataFetch';
+import { Link } from 'react-router-dom';
 import foto1 from '../../static/img/foto1.jpg'
-import foto2 from '../../static/img/foto2.jpg'
-import foto3 from '../../static/img/foto3.jpg'
-import foto4 from '../../static/img/foto4.jpg'
-import foto5 from '../../static/img/foto5.jpg'
-import foto6 from '../../static/img/foto6.jpg'
-import foto7 from '../../static/img/foto7.jpg'
-import foto8 from '../../static/img/foto8.jpg'
-import foto9 from '../../static/img/foto9.jpg'
+/* import foto2 from '../../static/img/foto2.jpg'
+import foto3 from '../../static/img/foto3.jpg' */
+
 
 const Home = () => {
+
+    const [projects, setProjects] = useState();
+
+    useEffect(() => {
+        const GetData = async () => {
+            try {
+                const data = await initialFetch('initial');
+                setProjects(data);
+            } catch (error) {
+                console.error(`Error fetching data:`, error);
+            }
+        }
+
+        GetData();
+    }, []) 
+
+    
+/*     if(projects) {
+        console.log(projects[0].projectphotos_set);
+    } */
+    
+
     return (
         <div className='HomeContainer'>
-            <div className='ImageContainer'><img className='projectImage' src={foto1} alt='project image' /></div>
-            <div className='ImageContainer'><img className='projectImage' src={foto2} alt='project image' /></div>
-            <div className='ImageContainer'><img className='projectImage' src={foto3} alt='project image' /></div>
+            {projects && projects.map((project) => (
+                <Link to={"/project/" + project.id} className="link">
+                    <div className='ImageContainer'>
+                        <img className='projectImage' src={project.image} alt='project image' />
+                    </div>
+                </Link>
+            ))}
         </div>
     );
 }
