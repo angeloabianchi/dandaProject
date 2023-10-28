@@ -10,8 +10,21 @@
     
 }
 
+.videoNavBar {
+    z-index: 0;
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
 .leftNavBar {
     width: 50%;
+    z-index: 1;
 }
 
 .rightNavBar {
@@ -20,12 +33,13 @@
     flex-direction: row;
     justify-content: flex-end;
     text-decoration: none;
+    z-index: 1;
 }
 
 .NavBarLinks {
     text-decoration: none;
     font-size: 2rem;
-    color: black;
+    color: white;
     margin-left: 30px;
 }
 

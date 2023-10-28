@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { initialFetch } from '../../Components/DataFetch/DataFetch';
+import { dataFetch } from '../../Components/DataFetch/DataFetch';
 import { useParams } from 'react-router-dom';
 
 
@@ -15,7 +15,7 @@ const Project = () => {
         const GetData = async () => {
             for (const type of requests) {
                 try {
-                    const data = await initialFetch(type, projId);
+                    const data = await dataFetch(type, projId);
                     if (type === 'project') {
                         setProject(data);
                     } else {
@@ -31,13 +31,26 @@ const Project = () => {
         GetData();
     }, [projId]) 
 
-    console.log(project);
-    console.log(photos);
+    
 
 
     return (
-        <div className=''>
-            porque n retorna aqui?
+        <div className='ProjectContainer'>
+            {project && photos ? (
+                <>
+                    <div className='title'>{project.name}</div>
+                    <div className='video'>{project.video}</div>
+                    <div className='photoContainer'>
+                        {photos && photos.map((photo) => (
+                            <img className='photoImage' src={photo.url} alt='project image' />
+                        ))}
+                    </div>
+                    <div className='photos'>a</div>
+                </>
+            ) : (
+                <div>Loading...</div>
+            )}
+
         </div>
     );
 }

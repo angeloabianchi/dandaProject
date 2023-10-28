@@ -1,17 +1,23 @@
 .HomeContainer {
     width: 100%;
     overflow: hidden;
-    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.ImageContainer {
-    width: 33%;
-    height: 50%;
+.link {
+    padding: 0%;
+    text-decoration: none;
+    color: black;
 }
 
-.projectImage {
-    width: 300px;
+.homeTitle {
+    opacity: 0%;
+    transition: opacity 500ms;
+    height: 100%;
+}
+
+.link:hover .homeTitle {
+    opacity: 100%;
 }

@@ -13,7 +13,7 @@ const generateUrl = (type, id) => {
 }
 
 
-const initialFetch = async (type, id) => {
+const dataFetch = async (type, id) => {
 
     const fetch = require('node-fetch');
     
@@ -36,4 +36,4 @@ const initialFetch = async (type, id) => {
 
 }
 
-export {initialFetch};
+export {dataFetch};
