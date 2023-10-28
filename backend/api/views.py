@@ -11,7 +11,12 @@ class DandaView(viewsets.ModelViewSet):
     queryset = DandaProjects.objects.all()
     serializer_class = DandaProjectsSerializer
 
-class ProjectView(generics.ListAPIView):
+class ProjectView(generics.RetrieveAPIView):
+    queryset = DandaProjects.objects.all()
+    serializer_class = DandaProjectsSerializer
+
+
+class PhotoView(generics.ListAPIView):
     serializer_class = ProjectPhotosSerializer
 
     def get_queryset(self):

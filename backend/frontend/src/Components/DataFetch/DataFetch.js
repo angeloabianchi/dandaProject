@@ -21,7 +21,12 @@ const initialFetch = async (type, id) => {
 
     console.log(`url - ${url}`)
 
-    return await fetch(url)
+    return await fetch(url, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
     .then(res => res.json())
     .then(data => {
         const results = data;

@@ -135,9 +135,12 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+CORS_ALLOW_ALL_ORIGINS = False
+
 CORS_ALLOWED_ORIGINS = [
     # Add the origins that are allowed to make cross-origin requests to your Django app.
     "http://localhost:3000",  # Replace with the actual domain you want to allow
+    "http://127.0.0.1:3000"
 ]
 
 CORS_ALLOW_METHODS = [
