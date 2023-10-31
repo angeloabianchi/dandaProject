@@ -1,0 +1,17 @@
+.loadingPage {
+    animation: loading-animation 500ms ease-in-out infinite;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingLogoImage {
+    width: 230px;
+}
+
+@keyframes loading-animation {
+    0% { opacity: 0%; }
+    50% { opacity: 100%; }
+    100% {opacity: 0%;}
+}

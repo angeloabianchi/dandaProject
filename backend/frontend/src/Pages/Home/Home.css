@@ -1,9 +1,10 @@
-.HomeContainer {
+.homePage {
     width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    overflow: hidden; 
+}
+
+.homeContent {
+    animation: opacity-animation 2s ease-in-out;
 }
 
 .link {
@@ -14,10 +15,23 @@
 
 .homeTitle {
     opacity: 0%;
-    transition: opacity 500ms;
+    transition: opacity 500ms, background-color 500ms;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
 }
 
 .link:hover .homeTitle {
     opacity: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes opacity-animation {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
 }
