@@ -1,5 +1,6 @@
 const generateUrl = (type, id) => {
     let url = 'http://127.0.0.1:8000/api/dandaprojects/';
+    console.log(JSON.stringify(id))
     switch (type) {
         case 'initial':
             return url;

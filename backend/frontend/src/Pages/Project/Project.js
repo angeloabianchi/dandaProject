@@ -37,6 +37,9 @@ const Project = () => {
         
     }, [projId]) 
 
+    /* console.log(project)
+    console.log(photos) */
+
 
     return (
         <div className='ProjectContainer'>
@@ -67,8 +70,6 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
-                    
-
                 </>
             ) : (
                 <div><Loading /></div>

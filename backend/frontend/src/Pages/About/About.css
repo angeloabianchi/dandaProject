@@ -2,3 +2,8 @@
     animation: opacity-animation 1s ease;
 }
 
+/* @media only screen and (max-width: 600px) {
+    .aboutPage {
+      background-color: lightblue;
+    }
+  } */

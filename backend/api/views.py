@@ -14,6 +14,8 @@ class DandaView(viewsets.ModelViewSet):
 class ProjectView(generics.RetrieveAPIView):
     queryset = DandaProjects.objects.all()
     serializer_class = DandaProjectsSerializer
+    # This tells the view to look up projects by 'name' field
+    # lookup_field = 'name' 
 
 
 class PhotoView(generics.ListAPIView):

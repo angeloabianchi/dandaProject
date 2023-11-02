@@ -14,6 +14,18 @@ video {
     left: 0;
 }
 
+.videoFooter {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
 .footerContent {
     color: #f5deb3;
     display: flex;
@@ -47,4 +59,27 @@ video {
 
 .footerLeft img {
     width: 30px;
+}
+
+
+@media only screen and (max-width: 766px) {
+    .FooterContainer {
+        height: 12vh;
+    }
+
+    .footerContent {
+        flex-direction: column;
+    }
+
+    .videoFooter {
+        height: inherit;
+    }
+
+    .footerRight {
+        text-align: center;
+    }
+
+    .footerLeft {
+        text-align: center;
+    }
 }

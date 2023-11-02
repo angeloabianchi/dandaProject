@@ -32,7 +32,7 @@ const Home = () => {
                 <div><Loading /></div>
             ) : (
                 <div className='homeContent'>
-                    <div class='row row-cols-3'>
+                    <div class='row row-cols-lg-3 row-cols-md-2 row-cols-sm-1'>
                         {projects && projects.map((project) => (
                             <Link to={"/project/" + project.id} className="link">
                                 <div class='col'
