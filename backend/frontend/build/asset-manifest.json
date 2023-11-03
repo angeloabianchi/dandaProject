@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.68236576.css",
+    "main.js": "/static/js/main.fc73261a.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/foto1.jpg": "/static/media/foto1.3a79966bd51ff1edab6b.jpg",
+    "static/media/DandaLogo.png": "/static/media/DandaLogo.f394532b2c5e8559a143.png",
+    "index.html": "/index.html",
+    "main.68236576.css.map": "/static/css/main.68236576.css.map",
+    "main.fc73261a.js.map": "/static/js/main.fc73261a.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68236576.css",
+    "static/js/main.fc73261a.js"
+  ]
+}
