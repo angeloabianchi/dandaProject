@@ -1,5 +1,5 @@
 const generateUrl = (type, id) => {
-    let url = `${process.env.REACT_APP_BASE_URL_PRODUCTION}`;
+    let url = `${process.env.REACT_APP_BASE_URL_LOCAL}`;
     console.log(JSON.stringify(id))
     switch (type) {
         case 'initial':
