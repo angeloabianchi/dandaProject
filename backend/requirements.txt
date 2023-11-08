@@ -70,7 +70,7 @@ requests==2.25.1
 SecretStorage==3.3.1
 six==1.16.0
 sqlparse==0.4.4
-systemd-python==234
+#systemd-python==234
 typing_extensions==4.8.0
 ubuntu-advantage-tools==8001
 ubuntu-drivers-common==0.0.0
