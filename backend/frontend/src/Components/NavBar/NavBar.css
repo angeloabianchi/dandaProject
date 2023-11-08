@@ -55,7 +55,7 @@
     /* Control the size and position of the logo */
     transform: scale(1.7); /* Adjust the scale factor to make the image larger */
     transform-origin: left; /* Adjust the origin to keep it aligned with the left side */
-  }
+}
 
 
 @media only screen and (max-width: 991px) {
