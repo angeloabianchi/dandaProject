@@ -82,13 +82,6 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-#SQL
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
 
 #MySQL
 DATABASES = {
@@ -98,9 +91,12 @@ DATABASES = {
         'USER': config("MYSQL_USER"),
         'PASSWORD': config("MYSQL_PASSWORD"),
         'HOST': config("MYSQL_HOST"),
+        'PORT': '3306',
+        'OPTIONS': {
+            'sql_mode': 'STRICT_TRANS_TABLES',
+        },
     }
 }
-
 
 
 # Password validation
@@ -133,13 +129,14 @@ USE_I18N = True
 
 USE_TZ = True
 
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
-STATICFILES_DIRS = [
+STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static')           #Deployed
+STATICFILES_DIRS = [                                    #local
     os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
 
