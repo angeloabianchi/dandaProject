@@ -1,6 +1,9 @@
+
 .aboutPage {
   animation: opacity-animation 1s ease;
   height: 80vh;
+  font-family: 'Arvo', sans-serif;
+  color: wheat;
 }
 
 .daniPhoto {
