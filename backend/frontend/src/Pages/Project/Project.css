@@ -1,33 +1,42 @@
 .ProjectContainer {
-    color: wheat;
+  color: wheat;
 }
 
 .project {
-    animation: opacity-animation 1s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  animation: opacity-animation 1s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.iframeVideo {
+  height: 60vh;
+}
+
+.projectDescription {
+  height: 30vh;
+  width: 50%;
 }
 
 .ratio {
-    width: 65%;
-    height: 550px;
+  width: 65%;
+  height: 550px;
 }
 
 .projectVideo {
-    height: 650px;
+  height: 650px;
 }
 
 .photoContainer {
-    margin-top: 5%;
-    width: 80%;
+  margin-top: 5%;
+  width: 80%;
 }
 
 .photoImage {
-    height: 85vh;
+  height: 85vh;
 }

@@ -1,85 +1,83 @@
 .FooterContainer {
-    width: 100%;
-    height: 10vh;
-    overflow: hidden;
-    align-items: center;  
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+  align-items: center;
 }
 
 video {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .videoFooter {
-    position: absolute;
-    width: 100%;
-    height: 10vh;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
 }
 
 .footerContent {
-    color: #f5deb3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding-left: 2%;
-    padding-right: 2%;
+  color: #f5deb3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .footerRight {
-    width: 33.33%;
-    text-align: start;
+  width: 33.33%;
+  text-align: start;
 }
 
 .footerCenter {
-    width: 33.33%;
-    text-align: center;
+  width: 33.33%;
+  text-align: center;
 }
 
 .footerLeft {
-    width: 33.33%;
-    text-align: end;
+  width: 33.33%;
+  text-align: end;
 }
 
 .logoImageFooter {
-    width: 20%;
-
+  width: 20%;
 }
 
 .footerLeft img {
-    width: 30px;
+  width: 30px;
 }
 
-
 @media only screen and (max-width: 766px) {
-    .FooterContainer {
-        height: 12vh;
-    }
+  .FooterContainer {
+    height: 12vh;
+  }
 
-    .footerContent {
-        flex-direction: column;
-    }
+  .footerContent {
+    flex-direction: column;
+  }
 
-    .videoFooter {
-        height: inherit;
-    }
+  .videoFooter {
+    height: inherit;
+  }
 
-    .footerRight {
-        text-align: center;
-    }
+  .footerRight {
+    text-align: center;
+  }
 
-    .footerLeft {
-        text-align: center;
-    }
+  .footerLeft {
+    text-align: center;
+  }
 }

@@ -4,7 +4,7 @@ from .models import DandaProjects, ProjectPhotos
 class DandaProjectsSerializer(serializers.ModelSerializer):
     class Meta:
         model = DandaProjects
-        fields = ('id', 'name', 'video', 'image', 'projectphotos_set')
+        fields = ('id', 'name', 'video', 'image', 'description', 'projectphotos_set')
 
 
 class ProjectPhotosSerializer(serializers.ModelSerializer):

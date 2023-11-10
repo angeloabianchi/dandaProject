@@ -1,5 +1,10 @@
 .aboutPage {
-    animation: opacity-animation 1s ease;
+  animation: opacity-animation 1s ease;
+  height: 80vh;
+}
+
+.daniPhoto {
+  width: 100%;
 }
 
 /* @media only screen and (max-width: 600px) {

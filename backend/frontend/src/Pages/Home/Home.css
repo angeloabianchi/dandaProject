@@ -1,45 +1,45 @@
 .homePage {
-    width: 100%;
-    overflow: hidden; 
+  width: 100%;
+  overflow: hidden;
 }
 
 .homeContent {
-    animation: opacity-animation 2s ease-in-out;
+  animation: opacity-animation 2s ease-in-out;
 }
 
 .link {
-    padding: 0%;
-    text-decoration: none;
-    color: black;
+  padding: 0%;
+  text-decoration: none;
+  color: black;
 }
 
 .homeTitle {
-    opacity: 0%;
-    transition: opacity 500ms, background-color 500ms;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: wheat;
+  opacity: 0%;
+  transition: opacity 500ms, background-color 500ms;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
 }
 
 .link:hover .homeTitle {
-    opacity: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  opacity: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 @keyframes opacity-animation {
-    from {
-        opacity: 0%;
-    } to {
-        opacity: 100%;
-    }
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .projectsSection {
-        display: flex;
-        flex-direction: column;
-    }
-
+  .projectsSection {
+    display: flex;
+    flex-direction: column;
   }
+}
