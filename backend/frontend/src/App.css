@@ -2,7 +2,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=VT323&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Amatic+SC&family=League+Spartan:wght@300&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Amatic+SC&family=Chakra+Petch&family=League+Spartan:wght@300&family=Rubik+Moonrocks&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap'); */
@@ -27,7 +27,7 @@
 
 .App-header {
   width: 100%;
-  font-family: 'Rubik Moonrocks', sans-serif;
+  font-family: 'Monoton', sans-serif;
 }
 
 main {
