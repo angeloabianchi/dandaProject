@@ -56,7 +56,7 @@ const NavBar = () => {
                     location.pathname === "/" ? "selected" : ""
                   }`}
                   to="/">
-                  <span>Jobs</span>
+                  <span>Work</span>
                 </Link>
               </li>
               <li class="nav-item">
