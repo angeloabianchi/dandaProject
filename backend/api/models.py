@@ -5,7 +5,7 @@ class DandaProjects(models.Model):
     name = models.CharField(max_length=200)
     video = models.CharField(max_length=300)
     image = models.CharField(max_length=300)
-    description = models.CharField(max_length=3000, default='NO DESCRIPTION YET')
+    description = models.CharField(max_length=3000)
 
     def __str__(self):
         return self.name
