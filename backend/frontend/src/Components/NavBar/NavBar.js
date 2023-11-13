@@ -10,13 +10,13 @@ const NavBar = () => {
   const location = useLocation();
 
   return (
-    <div>
-      <div className="videoNavBar">
+    <div className="NavBarContainer">
+      {/* <div className="videoNavBar">
         <video className="video" preload="true" autoPlay loop muted>
           <source src={navBarBackground} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div>
+      </div> */}
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid">
           <Link to={"/"} className="logoLink">

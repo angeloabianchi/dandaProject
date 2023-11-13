@@ -47,6 +47,7 @@ const Home = () => {
                     }}>
                     <div class="" className="homeTitle">
                       <h1>{project.name}</h1>
+                      <h3>{project.category}</h3>
                     </div>
                   </div>
                 </Link>

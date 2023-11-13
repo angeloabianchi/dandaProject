@@ -1,3 +1,7 @@
+.NavBarContainer {
+  background-color: black;
+}
+
 .videoNavBar {
   position: absolute;
   width: 100%;

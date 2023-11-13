@@ -6,6 +6,7 @@ class DandaProjects(models.Model):
     video = models.CharField(max_length=300)
     image = models.CharField(max_length=300)
     description = models.CharField(max_length=3000)
+    category = models.CharField(max_length=200, default='TEASER')
 
     def __str__(self):
         return self.name

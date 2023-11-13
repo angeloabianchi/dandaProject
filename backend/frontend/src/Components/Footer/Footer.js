@@ -12,12 +12,12 @@ const Footer = () => {
   let year = date.getFullYear();
   return (
     <div className="FooterContainer">
-      <div className="videoFooter">
+      {/* <div className="videoFooter">
         <video className="video" preload="true" autoPlay loop muted>
           <source src={navBarBackground} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div>
+      </div> */}
       <div className="footerContent">
         <div className="footerRight">
           <Link to={"/"} className="logoLinkFooter">

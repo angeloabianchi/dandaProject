@@ -1,13 +1,16 @@
 
 .aboutPage {
   animation: opacity-animation 1s ease;
-  height: 80vh;
   font-family: 'Arvo', sans-serif;
   color: wheat;
 }
 
 .daniPhoto {
   width: 100%;
+}
+
+.dandaAboutText {
+  text-align: justify;
 }
 
 /* @media only screen and (max-width: 600px) {
