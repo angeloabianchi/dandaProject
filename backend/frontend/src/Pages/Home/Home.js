@@ -3,9 +3,11 @@ import "./Home.css";
 import { dataFetch } from "../../Components/DataFetch/DataFetch";
 import { Link } from "react-router-dom";
 import Loading from "../../Components/Loading/Loading";
+import ImgContainer from "../../Components/ImgContainer/ImgContainer"
 
 const Home = () => {
   const [projects, setProjects] = useState();
+  
 
   useEffect(() => {
     const GetData = async () => {
@@ -20,7 +22,12 @@ const Home = () => {
     setTimeout(async () => {
       await GetData();
     }, 1000);
+
+    
   }, []);
+
+
+
 
   return (
     <div
@@ -33,6 +40,9 @@ const Home = () => {
         </div>
       ) : (
         <div className="homeContent">
+          <div class="mb-5">
+            <ImgContainer projects={projects} />
+          </div>
           <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
             {projects &&
               projects.map((project) => (
