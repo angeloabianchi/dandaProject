@@ -3,11 +3,10 @@ import "./Home.css";
 import { dataFetch } from "../../Components/DataFetch/DataFetch";
 import { Link } from "react-router-dom";
 import Loading from "../../Components/Loading/Loading";
-import ImgContainer from "../../Components/ImgContainer/ImgContainer"
+import ImgContainer from "../../Components/ImgContainer/ImgContainer";
 
 const Home = () => {
   const [projects, setProjects] = useState();
-  
 
   useEffect(() => {
     const GetData = async () => {
@@ -22,12 +21,7 @@ const Home = () => {
     setTimeout(async () => {
       await GetData();
     }, 1000);
-
-    
   }, []);
-
-
-
 
   return (
     <div

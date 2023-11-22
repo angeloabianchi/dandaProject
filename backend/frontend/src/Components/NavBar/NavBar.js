@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import { Link, useLocation } from "react-router-dom";
-import DandaLogo from "../../static/img/DandaLogo500x500.png";
+import DandaLogo from "../../static/img/DandaLogo2_500x500.png";
 import navBarBackground from "../../static/video/navbarBackground.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";

@@ -9,10 +9,10 @@ const About = () => {
     <div className="aboutPage">
       <div class="container d-flex align-items-center justify-content-center">
         <div class="row align-items-center">
-          <div className="col-6">
+          <div className="col-lg-6 col-md-12 mb-5 imageOne">
             <img src={dani} className="daniPhoto" />
           </div>
-          <div className="col-6 dandaAboutText">
+          <div className="col-lg-6 col-md-12 mb-5 dandaAboutText textOne">
             <p>
               Nacido en Barcelona en 1987, Daniel es un apasionado director y
               productor español que se graduó en cinematografía en la
@@ -29,7 +29,7 @@ const About = () => {
               enriquecedora.
             </p>
           </div>
-          <div className="col-6 dandaAboutText">
+          <div className="col-lg-6 col-md-12 dandaAboutText textTwo">
             <p>
               Su búsqueda de conocimiento lo llevó a Los Ángeles, donde sumergió
               sus habilidades en la dirección de anuncios y videoclips,
@@ -47,13 +47,13 @@ const About = () => {
               prestigioso premio Laus en la categoría de dirección.
             </p>
           </div>
-          <div className="col-6">
+          <div className="col-lg-6 col-md-12 mb-5 imageTwo">
             <img src={daniTwo} className="daniPhoto" />
           </div>
-          <div className="col-6">
+          <div className="col-lg-6 col-md-12 imageThree">
             <img src={daniThree} className="daniPhoto" />
           </div>
-          <div className="col-6 dandaAboutText">
+          <div className="col-lg-6 col-md-12 dandaAboutText textThree">
             <p>
               Daniel ha dejado su marca en el ámbito documental, con obras
               adquiridas por TVE, TV3, Flooxer, Spotify y Amazon Prime Video. Su

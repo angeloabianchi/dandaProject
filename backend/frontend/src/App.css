@@ -40,8 +40,11 @@ main {
 .Content { 
   display: flex;
   justify-content: center;
-  /* font-family: 'VT323', monospace; */
   font-family: 'Gurajada', sans-serif;
+}
+
+.footer {
+  font-family: 'VT323', monospace;
 }
 
 @media only screen and (max-width: 766px) {
@@ -58,6 +61,6 @@ main {
   .footer {
     position: relative;
     z-index: 1;
-    top: 14vh;
+    top: 13vh;
   }
 }

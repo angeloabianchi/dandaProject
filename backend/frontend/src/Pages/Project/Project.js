@@ -12,6 +12,7 @@ const Project = () => {
   const requests = ["project", "photos"];
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const GetData = async () => {
       for (const type of requests) {
         try {

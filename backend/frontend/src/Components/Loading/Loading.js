@@ -1,6 +1,6 @@
 import React from "react";
 import "./Loading.css";
-import DandaLogo from "../../static/img/DandaLogo500x500.png";
+import DandaLogo from "../../static/img/DandaLogo2_500x500.png";
 
 const Loading = () => {
   return (

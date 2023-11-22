@@ -1,7 +1,6 @@
-
 .aboutPage {
   animation: opacity-animation 1s ease;
-  font-family: 'Arvo', sans-serif;
+  font-family: "Arvo", sans-serif;
   color: wheat;
 }
 
@@ -17,4 +16,31 @@
     .aboutPage {
       background-color: lightblue;
     }
-  } */
+} */
+
+@media only screen and (max-width: 992px) {
+  #imageOne {
+    order: 1;
+  }
+
+  .textOne {
+    order: 2;
+  }
+
+  .imageTwo {
+    order: 3;
+  }
+
+  .textTwo {
+    order: 4;
+  }
+
+  .imageThree {
+    order: 5;
+  }
+
+  .textThree {
+    order: 6;
+  }
+
+}

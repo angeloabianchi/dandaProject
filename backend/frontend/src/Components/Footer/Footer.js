@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import DandaLogo from "../../static/img/DandaLogo500x500.png";
+import DandaLogo from "../../static/img/DandaLogo2_500x500.png";
 import linkedin from "../../static/img/linkedin.png";
 import vimeo from "../../static/img/vimeo.png";
 import email from "../../static/img/email.png";
@@ -19,22 +19,22 @@ const Footer = () => {
         </video>
       </div> */}
       <div className="footerContent">
-        <div className="footerRight">
+        <div className="footerRight w-100">
           <Link to={"/"} className="logoLinkFooter">
             <img className="logoImageFooter" src={DandaLogo} alt="Danda Logo" />
           </Link>
         </div>
-        <div className="footerCenter">
-          <p>&#169;{year} - Danda </p>
+        <div className="footerCenter w-100">
+          <p>&#169;{year}-DANI </p>
         </div>
-        <div className="footerLeft">
-          <a href="#">
+        <div className="footerLeft w-100">
+          <a className="col-4" href="#">
             <img src={linkedin} tag="Linkedin Icon" />
           </a>
-          <a href="#">
+          <a className="col-4" href="#">
             <img src={vimeo} tag="Vimeo Icon" />
           </a>
-          <a href="#">
+          <a className="col-4" href="#">
             <img src={email} tag="Email Icon" />
           </a>
         </div>
