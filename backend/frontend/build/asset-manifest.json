@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ed60855.css",
-    "main.js": "/static/js/main.78d74827.js",
+    "main.css": "/static/css/main.fc53323c.css",
+    "main.js": "/static/js/main.3794a684.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/daniSancho2.png": "/static/media/daniSancho2.f16c8f4737c5ea6b531e.png",
     "static/media/daniSancho3.png": "/static/media/daniSancho3.16b19fe818fbe3eb76d7.png",
     "static/media/daniSancho.png": "/static/media/daniSancho.555269343de3eee96748.png",
     "static/media/navbarBackground.mp4": "/static/media/navbarBackground.5a64746b6421428abb4a.mp4",
-    "static/media/email.png": "/static/media/email.73f67da34f51d1683ac4.png",
+    "static/media/instagram.png": "/static/media/instagram.e6f6fb908601ba7a6fbc.png",
     "static/media/DandaLogo2_500x500.png": "/static/media/DandaLogo2_500x500.0fbad3795b2f72a622cf.png",
     "static/media/vimeo.png": "/static/media/vimeo.b3d528d947efaccd48a1.png",
-    "static/media/linkedin.png": "/static/media/linkedin.cefe6b9724cbc852dce9.png",
     "index.html": "/index.html",
-    "main.6ed60855.css.map": "/static/css/main.6ed60855.css.map",
-    "main.78d74827.js.map": "/static/js/main.78d74827.js.map",
+    "main.fc53323c.css.map": "/static/css/main.fc53323c.css.map",
+    "main.3794a684.js.map": "/static/js/main.3794a684.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ed60855.css",
-    "static/js/main.78d74827.js"
+    "static/css/main.fc53323c.css",
+    "static/js/main.3794a684.js"
   ]
 }

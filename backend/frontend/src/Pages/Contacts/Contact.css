@@ -1,3 +1,34 @@
 .contactPage {
   animation: opacity-animation 1s ease;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h4 {
+  color: white;
+}
+
+.socialMediaSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.socialMediaIcons:hover {
+  color: aquamarine;
+}
+
+.socialMediaIcons {
+  width: 50%;
 }

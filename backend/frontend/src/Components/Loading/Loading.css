@@ -1,6 +1,6 @@
 .loadingPage {
   animation: loading-animation 500ms ease-in-out infinite;
-  min-height: 80vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
