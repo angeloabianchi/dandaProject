@@ -55,6 +55,7 @@ main {
 
   .Content {
     position: relative;
+    top: 7rem;
   }
 
   .footer {
