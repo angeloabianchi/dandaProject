@@ -17,3 +17,9 @@ class ProjectPhotos(models.Model):
     
     def __str__(self):
         return self.url
+    
+class Frames(models.Model):
+    url = models.CharField(max_length=3000)
+
+    def __str__(self):
+        return self.url

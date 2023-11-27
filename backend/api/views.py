@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import DandaProjects, ProjectPhotos
-from .serializers import DandaProjectsSerializer, ProjectPhotosSerializer
+from .models import DandaProjects, ProjectPhotos, Frames
+from .serializers import DandaProjectsSerializer, ProjectPhotosSerializer, FramesSerializer
 from rest_framework import viewsets, generics, status
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -24,3 +24,8 @@ class PhotoView(generics.ListAPIView):
     def get_queryset(self):
         dandaprojects_id = self.kwargs['dandaprojects_id']
         return ProjectPhotos.objects.filter(project_id=dandaprojects_id)
+    
+
+class FramesView(viewsets.ModelViewSet):
+    queryset = Frames.objects.all()
+    serializer_class = FramesSerializer

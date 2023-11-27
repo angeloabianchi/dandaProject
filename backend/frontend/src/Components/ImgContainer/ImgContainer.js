@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import './ImgContainer.css'
 
-const ImgContainer = ({ projects }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+const ImgContainer = ({ frames, onLoad }) => {
+  const [index, setIndex] = useState(0);
+  const [loadedImagesCount, setLoadedImagesCount] = useState(0);
 
   useEffect(() => {
     const displayNextImage = () => {
       // Calculate the next image index to display
-      const nextIndex = (currentImageIndex + 1) % projects.length;
-      setCurrentImageIndex(nextIndex);
+      const nextIndex = (index + 1) % frames.length;
+      setIndex(nextIndex);
     };
 
     const displayTime = getDisplayTime(); // Get a dynamic display time
@@ -17,24 +18,31 @@ const ImgContainer = ({ projects }) => {
     return () => {
       clearInterval(interval);
     };
-  }, [currentImageIndex, projects]);
+  }, [index, frames]);
 
   const getDisplayTime = () => {
     return Math.random() * 600 + 100; // Random display time between 500ms and 1500ms
   };
 
+  const handleImageLoaded = () => {
+    setLoadedImagesCount((prevCount) => prevCount + 1);
+    if (loadedImagesCount === frames.length - 1) {
+      onLoad();
+    }
+  };
+
   return (
     <div className="container d-flex justify-content-center">
-      {projects && projects.length > 0 && (
+      {frames && frames.length > 0 && (
         <div
-          alt={projects[currentImageIndex].name}
           className="dinamycImages"
           style={{
-            backgroundImage: `url(${projects[currentImageIndex].image})`,
+            backgroundImage: `url(${frames[index].url})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "650px",
           }}
+          onLoad={handleImageLoaded}
         >
         </div>
       )}

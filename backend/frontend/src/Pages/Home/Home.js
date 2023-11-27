@@ -7,21 +7,39 @@ import ImgContainer from "../../Components/ImgContainer/ImgContainer";
 
 const Home = () => {
   const [projects, setProjects] = useState();
+  const [frames, setFrames] = useState();
+  const [dataLoaded, setDataLoaded] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
-    const GetData = async () => {
+    const GetProjects = async () => {
       try {
         const data = await dataFetch("initial");
         setProjects(data);
+        setDataLoaded(true);
+      } catch (error) {
+        console.error(`Error fetching data:`, error);
+      }
+    };
+
+    const GetFrames = async () => {
+      try {
+        const dataFrames = await dataFetch("frames");
+        setFrames(dataFrames);
       } catch (error) {
         console.error(`Error fetching data:`, error);
       }
     };
 
     setTimeout(async () => {
-      await GetData();
+      await GetProjects();
+      await GetFrames();
     }, 1000);
   }, []);
+
+  const allImagesLoaded = () => {
+    setImagesLoaded(true);
+  };
 
   return (
     <div
@@ -35,7 +53,7 @@ const Home = () => {
       ) : (
         <div className="homeContent">
           <div class="mb-5">
-            <ImgContainer projects={projects} />
+            <ImgContainer frames={frames} onLoad={allImagesLoaded} />
           </div>
           <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
             {projects &&
