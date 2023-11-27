@@ -3,16 +3,16 @@ const generateUrl = (type, id) => {
   console.log(JSON.stringify(id));
   switch (type) {
     case "initial":
-      url += 'dandaprojects/';
+      url += "dandaprojects/";
       return url;
     case "frames":
-      url += 'frames/';
+      url += "frames/";
       return url;
     case "project":
-      url += 'dandaprojects/';
+      url += "dandaprojects/";
       return (url += `${id}`);
     case "photos":
-      url += 'dandaprojects/';
+      url += "dandaprojects/";
       return (url += `${id}/projectphotos/`);
     default:
       throw new Error(`Invalid type: ${type}`);

@@ -55,12 +55,10 @@ main {
 
   .Content {
     position: relative;
-    top: 13vh;
   }
 
   .footer {
     position: relative;
     z-index: 1;
-    top: 13vh;
   }
 }

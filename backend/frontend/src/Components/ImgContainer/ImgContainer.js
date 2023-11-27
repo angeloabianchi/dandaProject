@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './ImgContainer.css'
+import "./ImgContainer.css";
 
 const ImgContainer = ({ frames, onLoad }) => {
   const [index, setIndex] = useState(0);
@@ -40,11 +40,8 @@ const ImgContainer = ({ frames, onLoad }) => {
             backgroundImage: `url(${frames[index].url})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            height: "650px",
           }}
-          onLoad={handleImageLoaded}
-        >
-        </div>
+          onLoad={handleImageLoaded}></div>
       )}
     </div>
   );
