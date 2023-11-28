@@ -12,13 +12,21 @@ const ImgContainer = ({ frames, onLoad }) => {
       setIndex(nextIndex);
     };
 
-    const displayTime = 1000;
+    let displayTime = getDisplayTime(); // Get a dynamic display time
+
+    if (index === 0) {
+      displayTime += 2000;
+    }
     const interval = setInterval(displayNextImage, displayTime);
 
     return () => {
       clearInterval(interval);
     };
   }, [index, frames]);
+
+  const getDisplayTime = () => {
+    return Math.random() * 500 + 100; // Random display time between 500ms and 1500ms
+  };
 
   const handleImageLoaded = () => {
     setLoadedImagesCount((prevCount) => prevCount + 1);
@@ -30,20 +38,13 @@ const ImgContainer = ({ frames, onLoad }) => {
   return (
     <div className="container d-flex justify-content-center">
       {frames && frames.length > 0 && (
-        /*
-        <div
-          className="dinamycImages"
-          style={{
-            backgroundImage: `url(${frames[index].url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            height: "650px",
-          }}
-          onLoad={handleImageLoaded}></div>
-          */
-         <div>
-          <img className="dinamycImages" src={`${frames[index].url}`}  onLoad={handleImageLoaded}/>
-         </div>
+        <div>
+          <img
+            className="dinamycImages"
+            src={`${frames[index].url}`}
+            onLoad={handleImageLoaded}
+          />
+        </div>
       )}
     </div>
   );
