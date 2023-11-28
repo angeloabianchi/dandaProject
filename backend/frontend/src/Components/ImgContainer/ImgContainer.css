@@ -1,10 +1,28 @@
 .dinamycImages {
   width: 900px;
-  height: 650px;
+  height: auto;
+}
+
+@media only screen and (max-width: 921px) {
+  .dinamycImages {
+    width: 750px;
+  }
 }
 
 @media only screen and (max-width: 766px) {
   .dinamycImages {
-    height: 750px;
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .dinamycImages {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .dinamycImages {
+    width: 450px;
   }
 }
