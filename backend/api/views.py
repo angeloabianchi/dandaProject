@@ -15,15 +15,15 @@ class ProjectView(generics.RetrieveAPIView):
     queryset = DandaProjects.objects.all()
     serializer_class = DandaProjectsSerializer
     # This tells the view to look up projects by 'name' field
-    # lookup_field = 'name' 
-
+    lookup_field = 'name' 
+    lookup_value_regex = "[^/]+"
 
 class PhotoView(generics.ListAPIView):
     serializer_class = ProjectPhotosSerializer
 
     def get_queryset(self):
-        dandaprojects_id = self.kwargs['dandaprojects_id']
-        return ProjectPhotos.objects.filter(project_id=dandaprojects_id)
+        project_name = self.kwargs['name']
+        return ProjectPhotos.objects.filter(project__name=project_name)
     
 
 class FramesView(viewsets.ModelViewSet):

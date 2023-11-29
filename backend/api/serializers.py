@@ -5,6 +5,7 @@ class DandaProjectsSerializer(serializers.ModelSerializer):
     class Meta:
         model = DandaProjects
         fields = ('id', 'name', 'video', 'image', 'description', 'category', 'projectphotos_set')
+        lookup_field = "name"
 
 
 class ProjectPhotosSerializer(serializers.ModelSerializer):

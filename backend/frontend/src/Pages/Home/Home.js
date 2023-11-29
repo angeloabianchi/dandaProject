@@ -58,7 +58,7 @@ const Home = () => {
           <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
             {projects &&
               projects.map((project) => (
-                <Link to={"/project/" + project.id} className="link">
+                <Link to={"/project/" + project.name} className="link">
                   <div
                     class="col"
                     style={{
@@ -68,7 +68,7 @@ const Home = () => {
                       height: "400px",
                     }}>
                     <div class="" className="homeTitle">
-                      <h1>{project.name}</h1>
+                      <h1>{project.name.replace(/-/g, " ")}</h1>
                       <h3>{project.category}</h3>
                     </div>
                   </div>

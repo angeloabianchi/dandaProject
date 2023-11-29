@@ -1,6 +1,6 @@
 .contactPage {
   animation: opacity-animation 1s ease;
-  height: 80vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
 }
@@ -36,5 +36,11 @@
 @media only screen and (max-width: 766px) {
   .contact {
     margin-top: 15%;
+  }
+}
+
+@media only screen and (max-width: 1328px) {
+  .contactPage {
+    height: 80vh;
   }
 }

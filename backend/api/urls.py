@@ -8,8 +8,8 @@ router.register(r'dandaprojects', DandaView)
 
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('dandaprojects/<int:pk>', ProjectView.as_view(), name='dandaprojects-detail'),
-    path('dandaprojects/<int:dandaprojects_id>/projectphotos/', PhotoView.as_view(), name='project-photos-list'),
+    path('dandaprojects/<str:name>/', ProjectView.as_view(), name='dandaprojects-detail'),
+    path('dandaprojects/<str:name>/projectphotos/', PhotoView.as_view(), name='project-photos-list'),
     path('frames/', FramesView.as_view({'get': 'list'}), name='frames-list'),
+    path('', include(router.urls)),
 ]
