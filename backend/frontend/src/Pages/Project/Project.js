@@ -76,10 +76,8 @@ const Project = () => {
                   title={project.name.replace(/_/g, " ")}></iframe>
               </div>
               <script src="https://player.vimeo.com/api/player.js"></script>
-              {project.description === '' ? (
-                <div>
-
-                </div>
+              {project.description === "" ? (
+                <div></div>
               ) : (
                 <div className="d-flex align-items-center justify-content-center projectDescription">
                   <p>{project.description}</p>

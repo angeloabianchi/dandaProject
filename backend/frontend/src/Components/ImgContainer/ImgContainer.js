@@ -18,16 +18,15 @@ const ImgContainer = ({ frames, onLoad }) => {
 
     if (index === 0) {
       displayTime += 2000;
-      if(initialDisplay) {
+      if (initialDisplay) {
         setTimeout(() => {
-          setAddAnimation('blink');
+          setAddAnimation("blink");
         }, 1000);
       } else {
         setTimeout(() => {
-          setAddAnimation('blink');
+          setAddAnimation("blink");
         }, 500);
       }
-
     }
     const interval = setInterval(displayNextImage, displayTime);
 
@@ -54,7 +53,9 @@ const ImgContainer = ({ frames, onLoad }) => {
       {frames && frames.length > 0 && (
         <div>
           <img
-            className={addAnimation ? `dinamycImages ${addAnimation}` : "dinamycImages"}
+            className={
+              addAnimation ? `dinamycImages ${addAnimation}` : "dinamycImages"
+            }
             src={`${frames[index].url}`}
             onLoad={handleImageLoaded}
           />
