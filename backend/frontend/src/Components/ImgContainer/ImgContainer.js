@@ -4,6 +4,8 @@ import "./ImgContainer.css";
 const ImgContainer = ({ frames, onLoad }) => {
   const [index, setIndex] = useState(0);
   const [loadedImagesCount, setLoadedImagesCount] = useState(0);
+  const [addAnimation, setAddAnimation] = useState(null);
+  const [initialDisplay, setInitialDisplay] = useState(true);
 
   useEffect(() => {
     const displayNextImage = () => {
@@ -16,11 +18,23 @@ const ImgContainer = ({ frames, onLoad }) => {
 
     if (index === 0) {
       displayTime += 2000;
+      if(initialDisplay) {
+        setTimeout(() => {
+          setAddAnimation('blink');
+        }, 1000);
+      } else {
+        setTimeout(() => {
+          setAddAnimation('blink');
+        }, 500);
+      }
+
     }
     const interval = setInterval(displayNextImage, displayTime);
 
     return () => {
       clearInterval(interval);
+      setAddAnimation(null);
+      setInitialDisplay(false);
     };
   }, [index, frames]);
 
@@ -40,7 +54,7 @@ const ImgContainer = ({ frames, onLoad }) => {
       {frames && frames.length > 0 && (
         <div>
           <img
-            className="dinamycImages"
+            className={addAnimation ? `dinamycImages ${addAnimation}` : "dinamycImages"}
             src={`${frames[index].url}`}
             onLoad={handleImageLoaded}
           />

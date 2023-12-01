@@ -75,8 +75,8 @@ const NavBar = () => {
                   className={`NavBarLinks ${
                     location.pathname === "/contacts" ? "selected" : ""
                   }`}
-                  to="/contacts">
-                  <span>Contacts</span>
+                  to="/contact">
+                  <span>Contact</span>
                 </Link>
               </li>
             </ul>

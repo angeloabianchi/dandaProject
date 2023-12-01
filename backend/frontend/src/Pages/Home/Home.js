@@ -68,7 +68,7 @@ const Home = () => {
                       height: "400px",
                     }}>
                     <div class="" className="homeTitle">
-                      <h1>{project.name.replace(/-/g, " ")}</h1>
+                      <h1>{project.name.replace(/_/g, " ")}</h1>
                       <h3>{project.category}</h3>
                     </div>
                   </div>

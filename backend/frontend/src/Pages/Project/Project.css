@@ -32,6 +32,10 @@
   height: 650px;
 }
 
+/* .carousel-inner {
+  height: 450px;
+} */
+
 .photoContainer {
   margin-top: 5%;
   width: 80%;
@@ -39,7 +43,7 @@
 }
 
 .photoImage {
-  max-width: 50%;
+  max-width: 65%;
 }
 
 .errorPage {

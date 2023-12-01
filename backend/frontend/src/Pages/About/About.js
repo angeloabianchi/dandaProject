@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.css";
-import dani from "../../static/img/daniSancho.png";
-import daniTwo from "../../static/img/daniSancho2.png";
-import daniThree from "../../static/img/daniSancho3.png";
+import dani from "../../static/img/daniSancho.jpeg";
+import daniTwo from "../../static/img/daniSancho2.jpeg";
+import daniThree from "../../static/img/daniSancho3.jpeg";
 
 const About = () => {
   return (

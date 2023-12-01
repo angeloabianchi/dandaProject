@@ -60,6 +60,7 @@ main {
 
   .footer {
     position: relative;
+    top: 7rem;
     z-index: 1;
   }
 }
