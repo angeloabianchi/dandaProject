@@ -7,6 +7,14 @@
   animation: opacity-animation 2s ease-in-out;
 }
 
+.projectBox {
+  padding: 0;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
 .link {
   padding: 0%;
   text-decoration: none;

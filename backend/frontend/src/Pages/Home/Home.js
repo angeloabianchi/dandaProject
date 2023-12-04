@@ -58,21 +58,44 @@ const Home = () => {
           <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
             {projects &&
               projects.map((project) => (
-                <Link to={"/project/" + project.name} className="link">
-                  <div
-                    class="col"
-                    style={{
-                      backgroundImage: `url(${project.image})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      height: "400px",
-                    }}>
-                    <div class="" className="homeTitle">
-                      <h1>{project.name.replace(/_/g, " ")}</h1>
-                      <h3>{project.category}</h3>
+                <div className="projectBox" key={project.name}>
+                  {project.video !== "" ? (
+                    <Link to={"/project/" + project.name} className="link">
+                      <div
+                        className="col"
+                        style={{
+                          backgroundImage: `url(${project.image})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          height: "400px",
+                        }}>
+                        <div className="homeTitle">
+                          <h1>
+                            {project.name.replace(/-/g, " ").replace(/_/g, "-")}
+                          </h1>
+                          <h3>{project.category}</h3>
+                        </div>
+                      </div>
+                    </Link>
+                  ) : (
+                    <div
+                      className="grayscale link"
+                      style={{
+                        backgroundImage: `url(${project.image})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        height: "400px",
+                      }}>
+                      <div className="homeTitle">
+                        <h1>
+                          {project.name.replace(/-/g, " ").replace(/_/g, "-")}
+                        </h1>
+                        <h1>COMING SOON</h1>
+                        <h3>{project.category}</h3>
+                      </div>
                     </div>
-                  </div>
-                </Link>
+                  )}
+                </div>
               ))}
           </div>
         </div>
