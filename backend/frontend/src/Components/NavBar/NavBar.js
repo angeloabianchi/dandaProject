@@ -2,7 +2,6 @@ import React from "react";
 import "./NavBar.css";
 import { Link, useLocation } from "react-router-dom";
 import DandaLogo from "../../static/img/DandaLogo2_500x500.png";
-import navBarBackground from "../../static/video/navbarBackground.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,12 +10,6 @@ const NavBar = () => {
 
   return (
     <div className="NavBarContainer">
-      {/* <div className="videoNavBar">
-        <video className="video" preload="true" autoPlay loop muted>
-          <source src={navBarBackground} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div> */}
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid">
           <Link to={"/"} className="logoLink">
@@ -73,7 +66,7 @@ const NavBar = () => {
                 <Link
                   class="nav-link"
                   className={`NavBarLinks ${
-                    location.pathname === "/contacts" ? "selected" : ""
+                    location.pathname === "/contact" ? "selected" : ""
                   }`}
                   to="/contact">
                   <span>Contact</span>
