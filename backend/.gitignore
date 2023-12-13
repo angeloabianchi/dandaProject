@@ -1,2 +1,2 @@
 .env
-/frontend/build/static/media
+#/frontend/build/static/media

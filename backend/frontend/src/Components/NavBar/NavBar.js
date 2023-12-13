@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-import globeIcon from "../../static/img/globe.svg";
+import globeIcon from "../../static/img/globe.png";
 import "flag-icon-css/css/flag-icons.min.css";
 
 const NavBar = () => {
@@ -99,7 +99,7 @@ const NavBar = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
               style={{ color: "white" }}>
-              <img src={globeIcon} />
+              <img src={globeIcon} style={{width: "20px"}} />
             </button>
             <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-left">
               {languages.map(({ code, name, country_code }) => (
