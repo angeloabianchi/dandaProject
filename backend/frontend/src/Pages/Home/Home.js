@@ -4,12 +4,14 @@ import { dataFetch } from "../../Components/DataFetch/DataFetch";
 import { Link } from "react-router-dom";
 import Loading from "../../Components/Loading/Loading";
 import ImgContainer from "../../Components/ImgContainer/ImgContainer";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [projects, setProjects] = useState();
   const [frames, setFrames] = useState();
   const [dataLoaded, setDataLoaded] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const GetProjects = async () => {
@@ -73,7 +75,7 @@ const Home = () => {
                           <h1>
                             {project.name.replace(/-/g, " ").replace(/_/g, "-")}
                           </h1>
-                          <h3>{project.category}</h3>
+                          <h3>{t(`${project.category}`)}</h3>
                         </div>
                       </div>
                     </Link>
@@ -91,7 +93,7 @@ const Home = () => {
                           {project.name.replace(/-/g, " ").replace(/_/g, "-")}
                         </h1>
                         <h1>COMING SOON</h1>
-                        <h3>{project.category}</h3>
+                        <h3>{t(`${project.category}`)}</h3>
                       </div>
                     </div>
                   )}

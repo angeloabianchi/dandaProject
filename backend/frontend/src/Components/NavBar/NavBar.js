@@ -4,9 +4,27 @@ import { Link, useLocation } from "react-router-dom";
 import DandaLogo from "../../static/img/DandaLogo2_500x500.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import globeIcon from "../../static/img/globe.svg";
+import "flag-icon-css/css/flag-icons.min.css";
 
 const NavBar = () => {
+  const { t } = useTranslation();
   const location = useLocation();
+
+  const languages = [
+    {
+      code: "es",
+      name: "Español",
+      country_code: "es",
+    },
+    {
+      code: "en",
+      name: "English",
+      country_code: "gb",
+    },
+  ];
 
   return (
     <div className="NavBarContainer">
@@ -49,7 +67,7 @@ const NavBar = () => {
                     location.pathname === "/" ? "selected" : ""
                   }`}
                   to="/">
-                  <span>Work</span>
+                  <span>{t("Work")}</span>
                 </Link>
               </li>
               <li class="nav-item">
@@ -59,7 +77,7 @@ const NavBar = () => {
                     location.pathname === "/about" ? "selected" : ""
                   }`}
                   to="/about">
-                  <span>About</span>
+                  <span>{t("About")}</span>
                 </Link>
               </li>
               <li class="nav-item">
@@ -69,9 +87,32 @@ const NavBar = () => {
                     location.pathname === "/contact" ? "selected" : ""
                   }`}
                   to="/contact">
-                  <span>Contact</span>
+                  <span>{t("Contact")}</span>
                 </Link>
               </li>
+            </ul>
+          </div>
+          <div className="btn-group dropstart globeIcon">
+            <button
+              class="btn btn-link dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style={{ color: "white" }}>
+              <img src={globeIcon} />
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-left">
+              {languages.map(({ code, name, country_code }) => (
+                <li key={country_code}>
+                  <button
+                    class="dropdown-item"
+                    onClick={() => i18next.changeLanguage(code)}>
+                    <span
+                      className={`flag-icon flag-icon-${country_code} mx-2`}></span>
+                    {name}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

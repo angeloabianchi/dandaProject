@@ -3,6 +3,7 @@ import "./Project.css";
 import { dataFetch } from "../../Components/DataFetch/DataFetch";
 import { useLocation, useNavigate } from "react-router-dom";
 import Loading from "../../Components/Loading/Loading";
+import { useTranslation } from "react-i18next";
 
 const Project = () => {
   const location = useLocation();
@@ -13,6 +14,7 @@ const Project = () => {
   const [photos, setPhotos] = useState();
   const requests = ["project", "photos"];
   const [error, setError] = useState(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -84,7 +86,7 @@ const Project = () => {
                 <div></div>
               ) : (
                 <div className="d-flex align-items-center justify-content-center projectDescription">
-                  <p className="description">{project.description}</p>
+                  <p className="description">{t(`${project.description}`)}</p>
                 </div>
               )}
               <div className="photoContainer">
