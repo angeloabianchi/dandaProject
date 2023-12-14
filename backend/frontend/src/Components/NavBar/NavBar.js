@@ -99,7 +99,7 @@ const NavBar = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
               style={{ color: "white" }}>
-              <img src={globeIcon} style={{width: "20px"}} />
+              <img src={globeIcon} style={{ width: "20px" }} />
             </button>
             <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-left">
               {languages.map(({ code, name, country_code }) => (

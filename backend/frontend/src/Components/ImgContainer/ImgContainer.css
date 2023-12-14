@@ -1,3 +1,7 @@
+.frameImagesContainer {
+  height: 650px;
+}
+
 .dinamycImages {
   width: 900px;
   height: auto;
@@ -8,29 +12,40 @@
 }
 
 @media only screen and (max-width: 921px) {
+  .frameImagesContainer {
+    height: 550px;
+  }
   .dinamycImages {
     width: 750px;
   }
 }
 
 @media only screen and (max-width: 766px) {
+  .frameImagesContainer {
+    height: 450px;
+  }
   .dinamycImages {
     width: 650px;
   }
 }
 
 @media only screen and (max-width: 660px) {
+  .frameImagesContainer {
+    height: 400px;
+  }
   .dinamycImages {
     width: 550px;
   }
 }
 
 @media only screen and (max-width: 550px) {
+  .frameImagesContainer {
+    height: 300px;
+  }
   .dinamycImages {
     width: 450px;
   }
 }
-
 
 @keyframes blinking-image {
   0% {

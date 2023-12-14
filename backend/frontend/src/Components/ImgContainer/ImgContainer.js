@@ -51,7 +51,7 @@ const ImgContainer = ({ frames, onLoad }) => {
   return (
     <div className="container d-flex justify-content-center">
       {frames && frames.length > 0 && (
-        <div>
+        <div className="frameImagesContainer">
           <img
             className={
               addAnimation ? `dinamycImages ${addAnimation}` : "dinamycImages"

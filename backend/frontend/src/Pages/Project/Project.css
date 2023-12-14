@@ -20,7 +20,7 @@
 
 .projectDescription {
   height: 15vh;
-  width: 50%;
+  width: 65%;
 }
 
 .description {
@@ -44,10 +44,11 @@
   margin-top: 5%;
   width: 80%;
   z-index: 0;
+  height: 560px;
 }
 
 .photoImage {
-  max-width: 65%;
+  max-width: 1000px;
 }
 
 .errorPage {
@@ -72,14 +73,42 @@
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1328px) {
+  .errorPage {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 1256px) {
+  .photoImage {
+    max-width: 850px;
+  }
+}
+
+@media only screen and (max-width: 1062px) {
   .photoImage {
     max-width: 100%;
   }
 }
 
-@media only screen and (max-width: 1328px) {
-  .errorPage {
-    height: 80vh;
+@media only screen and (max-width: 767px) {
+  .photoContainer {
+    height: 350px;
+  }
+
+  .photoImage {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .photoContainer {
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .photoContainer {
+    height: 250px;
   }
 }
