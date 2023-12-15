@@ -12,6 +12,8 @@ const NavBar = () => {
   const { t } = useTranslation();
   const location = useLocation();
 
+  const currentLanguage = i18next.language;
+
   const languages = [
     {
       code: "es",
@@ -104,7 +106,9 @@ const NavBar = () => {
               {languages.map(({ code, name, country_code }) => (
                 <div className="col" key={country_code}>
                   <button
-                    className="dropdown-item languagueButtons"
+                    className={`dropdown-item languagueButtons ${
+                      code === currentLanguage ? "selected" : ""
+                    }`}
                     onClick={() => i18next.changeLanguage(code)}>
                     {code}
                   </button>

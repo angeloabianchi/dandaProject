@@ -39,62 +39,6 @@ const About = () => {
         class={`container d-flex align-items-center justify-content-center ${
           allImagesLoaded ? "d-block" : "d-none"
         }`}>
-        {/*         <div class="row align-items-center">
-          <div className="col-lg-6 col-md-12 mb-5 imageContainer">
-            <img
-              src={dani}
-              className="daniPhoto"
-              onLoad={() => handleImageLoad("dani")}
-            />
-          </div>
-          <div className="col-lg-6 col-md-12 mb-5 dandaAboutText">
-            <p>
-              {t("aboutTextOne")}
-            </p>
-          </div>
-          <div className="col-lg-6 col-md-12 mb-5 imageContainer">
-            <img
-              src={daniTwo}
-              className="daniPhoto"
-              onLoad={() => handleImageLoad("daniTwo")}
-            />
-          </div>
-          <div className="col-lg-6 col-md-12 mb-5 dandaAboutText">
-            <p>
-              {t("aboutTextTwo")}
-            </p>
-          </div>
-          <div className="col-lg-6 col-md-12 mb-5 imageContainer">
-            <img
-              src={daniThree}
-              className="daniPhoto"
-              onLoad={() => handleImageLoad("daniThree")}
-            />
-          </div>
-          <div className="col-lg-6 col-md-12 mb-5 dandaAboutText">
-            <p>
-              {t("aboutTextThree")}
-            </p>
-            <p>
-            {t("aboutTextFour")}
-            </p>
-            <p>
-            {t("aboutTextFive")}
-            </p>
-          </div>
-          <div className="col-lg-6 col-md-12 mb-5 imageContainer">
-            <img
-              src={daniFour}
-              className="daniPhoto"
-              onLoad={() => handleImageLoad("daniFour")}
-            />
-          </div>
-          <div className="col-lg-6 col-md-12 mb-5 dandaAboutText">
-            <p>
-            {t("aboutTextSix")}
-            </p>
-          </div>
-        </div> */}
         <div>
           <div className="row d-flex align-items-center">
             <div className="col-lg-6 col-md-12 mb-5 imageContainer">
