@@ -30,6 +30,10 @@
   font-family: "Gurajada", sans-serif;
 }
 
+body {
+  background-color: rgba(0, 0, 0, 1);
+}
+
 main {
   width: 100%;
   background-color: rgba(0, 0, 0, 1);
