@@ -11,7 +11,11 @@
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+.clientParagraph {
+  font-size: 1.3rem;
 }
 
 .iframeVideo {

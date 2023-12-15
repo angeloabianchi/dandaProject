@@ -15,6 +15,12 @@ const About = () => {
     daniFour: false,
   });
 
+  const dandaImages = [
+    { src: daniTwo, key: "daniTwo" },
+    { src: daniThree, key: "daniThree" },
+    { src: daniFour, key: "daniFour" }
+  ];
+
   const { t } = useTranslation();
 
   const allImagesLoaded = Object.values(imagesLoaded).every((image) => image);
@@ -33,7 +39,7 @@ const About = () => {
         class={`container d-flex align-items-center justify-content-center ${
           allImagesLoaded ? "d-block" : "d-none"
         }`}>
-        <div class="row align-items-center">
+        {/*         <div class="row align-items-center">
           <div className="col-lg-6 col-md-12 mb-5 imageContainer">
             <img
               src={dani}
@@ -43,7 +49,7 @@ const About = () => {
           </div>
           <div className="col-lg-6 col-md-12 mb-5 dandaAboutText">
             <p>
-              {t("aboutTextOne")}  {/* public/assets/locale/{language}/translation.json */}
+              {t("aboutTextOne")}
             </p>
           </div>
           <div className="col-lg-6 col-md-12 mb-5 imageContainer">
@@ -87,6 +93,63 @@ const About = () => {
             <p>
             {t("aboutTextSix")}
             </p>
+          </div>
+        </div> */}
+        <div>
+          <div className="row d-flex align-items-center">
+            <div className="col-lg-6 col-md-12 mb-5 imageContainer">
+              <img
+                src={dani}
+                className="daniPhoto"
+                onLoad={() => handleImageLoad("dani")}
+              />
+            </div>
+            <div className="col-lg-6 col-md-12 mb-5 dandaAboutText">
+              <p>{t("aboutTextOne")}</p>
+              <p>{t("aboutTextTwo")}</p>
+              <p>{t("aboutTextThree")}</p>
+              <p>{t("aboutTextFour")}</p>
+              <p>{t("aboutTextFive")}</p>
+              <p>{t("aboutTextSix")}</p>
+            </div>
+          </div>
+          <div className="row mt-5">
+            <div id="carouselFade" class="carousel slide carousel-fade">
+                  <div class="carousel-inner">
+                    {dandaImages &&
+                      dandaImages.map((photo, index) => (
+                        <div
+                        class={`carousel-item ${index === 0 ? 'active' : ''} d-flex justify-content-center`}>
+                          <img
+                            src={photo.src}
+                            onLoad={() => handleImageLoad(photo.key)}
+                            className="d-block img-fluid daniCarouselPhotos"
+                            alt="project image"
+                          />
+                        </div>
+                      ))}
+                  </div>
+                  <button
+                          className="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselFade"
+                          data-bs-slide="prev">
+                          <span
+                            className="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                          <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          className="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselFade"
+                          data-bs-slide="next">
+                          <span
+                            className="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                          <span className="visually-hidden">Next</span>
+                        </button>
+                </div>
           </div>
         </div>
       </div>

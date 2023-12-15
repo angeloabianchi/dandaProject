@@ -7,7 +7,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import globeIcon from "../../static/img/globe.png";
-import "flag-icon-css/css/flag-icons.min.css";
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -92,28 +91,26 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <div className="btn-group dropstart globeIcon">
+          <div className="btn-group globeIcon">
             <button
-              class="btn btn-link dropdown-toggle"
+              className="btn btn-link"
               type="button"
-              data-bs-toggle="dropdown"
+              data-bs-toggle=""
               aria-expanded="false"
               style={{ color: "white" }}>
               <img src={globeIcon} style={{ width: "20px" }} />
             </button>
-            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-left">
+            <div class="row me-4">
               {languages.map(({ code, name, country_code }) => (
-                <li key={country_code}>
+                <div className="col" key={country_code}>
                   <button
-                    class="dropdown-item"
+                    className="dropdown-item languagueButtons"
                     onClick={() => i18next.changeLanguage(code)}>
-                    <span
-                      className={`flag-icon flag-icon-${country_code} mx-2`}></span>
-                    {name}
+                    {code}
                   </button>
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </nav>

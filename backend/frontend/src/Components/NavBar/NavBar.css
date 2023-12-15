@@ -2,16 +2,8 @@
   background-color: black;
 }
 
-.videoNavBar {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
+.languagueButtons {
+  color: wheat;
 }
 
 .globeIcon {

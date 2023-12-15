@@ -9,17 +9,25 @@
 }
 
 .daniPhoto {
+  width: 100%;
+}
+
+.daniCarouselPhotos {
   width: 60%;
 }
 
 .dandaAboutText {
   text-align: justify;
-  font-size: 1.3rem;
+  font-size: 0.85rem;
 }
 
 @media only screen and (max-width: 767px) {
-  .daniPhoto {
+  /* .daniPhoto {
     width: 80%;
+  } */
+
+  .daniCarouselPhotos {
+    width: 100%;
   }
 
   .dandaAboutText {
@@ -27,29 +35,3 @@
   }
 }
 
-/* @media only screen and (max-width: 992px) {
-  #imageOne {
-    order: 1;
-  }
-
-  .textOne {
-    order: 2;
-  }
-
-  .imageTwo {
-    order: 3;
-  }
-
-  .textTwo {
-    order: 4;
-  }
-
-  .imageThree {
-    order: 5;
-  }
-
-  .textThree {
-    order: 6;
-  }
-
-} */

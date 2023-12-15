@@ -4,7 +4,7 @@ from .models import DandaProjects, ProjectPhotos, Frames
 class DandaProjectsSerializer(serializers.ModelSerializer):
     class Meta:
         model = DandaProjects
-        fields = ('id', 'name', 'video', 'image', 'description', 'category', 'projectphotos_set')
+        fields = ('id', 'name', 'video', 'image', 'description', 'category', 'client', 'projectphotos_set')
         lookup_field = "name"
 
 
