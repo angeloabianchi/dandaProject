@@ -8,9 +8,9 @@
 
 .globeIcon {
   color: white;
-  position: absolute;
-  right: 1%;
-  top: 4%;
+  position: fixed;
+  right: 0.7%;
+  top: 2%;
 }
 
 .NavBarLinks {
@@ -51,9 +51,35 @@
   transform-origin: left; /* Adjust the origin to keep it aligned with the left side */
 }
 
+
+
+@media only screen and (max-width: 991px) {
+  .NavBarLinks {
+    margin: 0;
+  }
+
+  .globeIcon {
+    right: 1%;
+    top: 9%;
+  }
+
+  .es {
+    padding: 0;
+  }
+
+  .en {
+    padding-left: 8px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .NavBarLinks {
     margin: 0;
+  }
+
+  .globeIcon {
+    top: 8%;
+    right: 0.5%;
   }
 
   .logoImage {
@@ -61,8 +87,9 @@
   }
 }
 
-@media only screen and (max-width: 991px) {
-  .NavBarLinks {
-    margin: 0;
+@media only screen and (max-width: 527px) {
+  .globeIcon {
+    top: 8.4%;
+    right: -0.5%;
   }
 }

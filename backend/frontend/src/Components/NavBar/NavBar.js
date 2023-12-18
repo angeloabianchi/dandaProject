@@ -94,17 +94,17 @@ const NavBar = () => {
             </ul>
           </div>
           <div className="btn-group globeIcon">
-            <button
+{/*             <button
               className="btn btn-link"
               type="button"
               data-bs-toggle=""
               aria-expanded="false"
               style={{ color: "white" }}>
               <img src={globeIcon} style={{ width: "20px" }} />
-            </button>
+            </button> */}
             <div class="row me-4">
-              {languages.map(({ code, name, country_code }) => (
-                <div className="col" key={country_code}>
+              {languages.map(({ code, country_code }) => (
+                <div className={`col ${code}`} key={country_code}>
                   <button
                     className={`dropdown-item languagueButtons ${
                       code === currentLanguage ? "selected" : ""
