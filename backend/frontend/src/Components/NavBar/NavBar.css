@@ -45,6 +45,12 @@
   justify-content: space-around;
 }
 
+.closeButton {
+  position: absolute;
+  right: 43px;
+  top: 40px;
+}
+
 .logoWrapper {
   /* Control the size and position of the logo */
   transform: scale(1.7); /* Adjust the scale factor to make the image larger */
@@ -57,7 +63,7 @@
   }
 
   .globeIcon {
-    right: 46px;
+    right: 45px;
     top: 77px;
   }
 
@@ -66,7 +72,7 @@
   }
 
   .en {
-    padding-left: 8px;
+    padding-left: 6px;
   }
 }
 
@@ -77,7 +83,6 @@
 
   .globeIcon {
     top: 70px;
-    right: 46px;
   }
 
   .logoImage {

@@ -60,7 +60,10 @@ const NavBar = () => {
                 <FontAwesomeIcon
                   icon={faXmark}
                   size="2xl"
-                  style={{ color: "#f5deb3" }}
+                  style={{
+                    color: "#f5deb3"
+                  }}
+                  className="closeButton"
                 />
               ) : (
                 <FontAwesomeIcon
