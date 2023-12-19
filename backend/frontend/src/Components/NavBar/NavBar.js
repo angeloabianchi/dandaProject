@@ -102,7 +102,7 @@ const NavBar = () => {
               style={{ color: "white" }}>
               <img src={globeIcon} style={{ width: "20px" }} />
             </button> */}
-            <div class="row me-4">
+            <div class="row">
               {languages.map(({ code, country_code }) => (
                 <div className={`col ${code}`} key={country_code}>
                   <button
