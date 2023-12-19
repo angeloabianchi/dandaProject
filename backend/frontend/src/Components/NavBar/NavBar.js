@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
 import { Link, useLocation } from "react-router-dom";
 import DandaLogo from "../../static/img/DandaLogo2_500x500.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-import globeIcon from "../../static/img/globe.png";
 
 const NavBar = () => {
   const { t } = useTranslation();
   const location = useLocation();
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const currentLanguage = i18next.language;
 
@@ -26,6 +27,10 @@ const NavBar = () => {
       country_code: "gb",
     },
   ];
+
+  const handleToggle = () => {
+    setIsNavOpen(!isNavOpen);
+  };
 
   return (
     <div className="NavBarContainer">
@@ -45,16 +50,25 @@ const NavBar = () => {
             }
             type="button"
             data-bs-toggle="collapse"
+            onClick={handleToggle}
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon navbar-dark">
-              <FontAwesomeIcon
-                icon={faBars}
-                size="xl"
-                style={{ color: "#f5deb3" }}
-              />
+            <span class="navbar-dark">
+              {isNavOpen ? (
+                <FontAwesomeIcon
+                  icon={faXmark}
+                  size="2xl"
+                  style={{ color: "#f5deb3" }}
+                />
+              ) : (
+                <FontAwesomeIcon
+                  icon={faBars}
+                  size="xl"
+                  style={{ color: "#f5deb3" }}
+                />
+              )}
             </span>
           </button>
           <div
@@ -94,14 +108,6 @@ const NavBar = () => {
             </ul>
           </div>
           <div className="btn-group globeIcon">
-{/*             <button
-              className="btn btn-link"
-              type="button"
-              data-bs-toggle=""
-              aria-expanded="false"
-              style={{ color: "white" }}>
-              <img src={globeIcon} style={{ width: "20px" }} />
-            </button> */}
             <div class="row">
               {languages.map(({ code, country_code }) => (
                 <div className={`col ${code}`} key={country_code}>

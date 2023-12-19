@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.53942f39.css",
-    "main.js": "/static/js/main.bdecda67.js",
+    "main.js": "/static/js/main.2d623c8a.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/daniSancho2.jpeg": "/static/media/daniSancho2.bdd1eb223976e612d650.jpeg",
     "static/media/daniSancho3.jpeg": "/static/media/daniSancho3.698cfe16298e0cbf6f18.jpeg",
@@ -10,15 +10,14 @@
     "static/media/instagram.png": "/static/media/instagram.e6f6fb908601ba7a6fbc.png",
     "static/media/DandaLogo2_500x500.png": "/static/media/DandaLogo2_500x500.0fbad3795b2f72a622cf.png",
     "static/media/vimeo.png": "/static/media/vimeo.b3d528d947efaccd48a1.png",
-    "static/media/globe.png": "/static/media/globe.51d80fa8e15699ac6cc2.png",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.53942f39.css.map": "/static/css/main.53942f39.css.map",
-    "main.bdecda67.js.map": "/static/js/main.bdecda67.js.map",
+    "main.2d623c8a.js.map": "/static/js/main.2d623c8a.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53942f39.css",
-    "static/js/main.bdecda67.js"
+    "static/js/main.2d623c8a.js"
   ]
 }
