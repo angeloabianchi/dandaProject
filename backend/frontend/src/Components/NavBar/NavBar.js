@@ -75,7 +75,7 @@ const NavBar = () => {
             </span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            className="collapse navbar-collapse justify-content-end navBarMenu"
             id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">

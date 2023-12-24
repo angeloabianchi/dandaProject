@@ -138,8 +138,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # Adjust as per your project str
 
 # Define the directory where Django should look for static files
 STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'frontend/build'),
     os.path.join(BASE_DIR, 'frontend/build/static'),  # Adjust this to match your React build's static directory
-    # Add other static file directories if needed
     os.path.join(BASE_DIR, 'frontend/build/static/locales')
 ]
 
