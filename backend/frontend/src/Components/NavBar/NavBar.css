@@ -6,6 +6,10 @@
   color: wheat;
 }
 
+.logoLink {
+  width: 195px;
+}
+
 .globeIcon {
   color: white;
   position: absolute;
@@ -62,6 +66,10 @@
   transform-origin: left; /* Adjust the origin to keep it aligned with the left side */
 }
 
+.navbar-toggler {
+  z-index: 1;
+}
+
 @media only screen and (max-width: 991px) {
   .NavBarLinks {
     margin: 0;
@@ -92,5 +100,9 @@
 
   .logoImage {
     width: 105px;
+  }
+
+  .logoLink {
+    width: 160px;
   }
 }
