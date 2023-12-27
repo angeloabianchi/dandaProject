@@ -61,7 +61,7 @@ const NavBar = () => {
                   icon={faXmark}
                   size="2xl"
                   style={{
-                    color: "#f5deb3"
+                    color: "#f5deb3",
                   }}
                   className="closeButton"
                 />
