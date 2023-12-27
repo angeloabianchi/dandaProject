@@ -18,7 +18,7 @@ const About = () => {
   const dandaImages = [
     { src: daniTwo, key: "daniTwo" },
     { src: daniThree, key: "daniThree" },
-    { src: daniFour, key: "daniFour" }
+    { src: daniFour, key: "daniFour" },
   ];
 
   const { t } = useTranslation();
@@ -59,41 +59,43 @@ const About = () => {
           </div>
           <div className="row mt-5">
             <div id="carouselFade" class="carousel slide carousel-fade">
-                  <div class="carousel-inner">
-                    {dandaImages &&
-                      dandaImages.map((photo, index) => (
-                        <div
-                        class={`carousel-item ${index === 0 ? 'active' : ''} d-flex justify-content-center`}>
-                          <img
-                            src={photo.src}
-                            onLoad={() => handleImageLoad(photo.key)}
-                            className="d-block img-fluid daniCarouselPhotos"
-                            alt="project image"
-                          />
-                        </div>
-                      ))}
-                  </div>
-                  <button
-                          className="carousel-control-prev"
-                          type="button"
-                          data-bs-target="#carouselFade"
-                          data-bs-slide="prev">
-                          <span
-                            className="carousel-control-prev-icon"
-                            aria-hidden="true"></span>
-                          <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                          className="carousel-control-next"
-                          type="button"
-                          data-bs-target="#carouselFade"
-                          data-bs-slide="next">
-                          <span
-                            className="carousel-control-next-icon"
-                            aria-hidden="true"></span>
-                          <span className="visually-hidden">Next</span>
-                        </button>
-                </div>
+              <div class="carousel-inner">
+                {dandaImages &&
+                  dandaImages.map((photo, index) => (
+                    <div
+                      class={`carousel-item ${
+                        index === 0 ? "active" : ""
+                      } d-flex justify-content-center`}>
+                      <img
+                        src={photo.src}
+                        onLoad={() => handleImageLoad(photo.key)}
+                        className="d-block img-fluid daniCarouselPhotos"
+                        alt="project image"
+                      />
+                    </div>
+                  ))}
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselFade"
+                data-bs-slide="prev">
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselFade"
+                data-bs-slide="next">
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

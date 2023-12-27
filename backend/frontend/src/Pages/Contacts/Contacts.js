@@ -16,17 +16,28 @@ const Contacts = () => {
         <h1 className="mb-5">+34 647 282 554</h1>
         <h4>{t("SOCIAL MEDIAS")}</h4>
         <div className="socialMediaSection">
-          <a className="d-flex justify-content-center" href="https://www.instagram.com/danisancho87/" target="_blank" rel="noopener noreferrer">
-            <img src={instagram} tag="instagram Icon" className="socialMediaIcons"/>
+          <a
+            className="d-flex justify-content-center"
+            href="https://www.instagram.com/danisancho87/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src={instagram}
+              tag="instagram Icon"
+              className="socialMediaIcons"
+            />
           </a>
-          <a className="d-flex justify-content-center" href="https://vimeo.com/danisanchoperis" target="_blank" rel="noopener noreferrer">
-            <img src={vimeo} tag="Vimeo Icon" className="socialMediaIcons"/>
+          <a
+            className="d-flex justify-content-center"
+            href="https://vimeo.com/danisanchoperis"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img src={vimeo} tag="Vimeo Icon" className="socialMediaIcons" />
           </a>
         </div>
       </div>
     </div>
   );
-
 };
 
 export default Contacts;

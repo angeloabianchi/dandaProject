@@ -92,7 +92,7 @@ const Home = () => {
                         <h1>
                           {project.name.replace(/-/g, " ").replace(/_/g, "-")}
                         </h1>
-                        <h1>{t('(COMING SOON)')}</h1>
+                        <h1>{t("(COMING SOON)")}</h1>
                         <h3>{t(`${project.category}`)}</h3>
                       </div>
                     </div>

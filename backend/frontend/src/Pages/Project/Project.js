@@ -65,8 +65,14 @@ const Project = () => {
               <h1 className="title">
                 {project.name.replace(/-/g, " ").replace(/_/g, "-")}
               </h1>
-              {project.client !== '' ? (<p className="clientParagraph">{t(`CLIENT - ${project.client}`)}</p>) : ('')}
-              
+              {project.client !== "" ? (
+                <p className="clientParagraph">
+                  {t(`CLIENT - ${project.client}`)}
+                </p>
+              ) : (
+                ""
+              )}
+
               <div class="w-100 iframeVideo">
                 <iframe
                   src={`https://player.vimeo.com/video/${project.video}?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479`}

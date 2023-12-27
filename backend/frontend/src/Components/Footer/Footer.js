@@ -3,7 +3,6 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 import DandaLogo from "../../static/img/DandaLogo2_500x500.png";
 
-
 const Footer = () => {
   const date = new Date();
   let year = date.getFullYear();
