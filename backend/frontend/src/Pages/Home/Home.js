@@ -73,7 +73,7 @@ const Home = () => {
                         }}>
                         <div className="homeTitle">
                           <h1>
-                            {project.name.replace(/-/g, " ").replace(/_/g, "-")}
+                            {project.name.replace(/-/g, " ").replace(/_/g, "-").toUpperCase()}
                           </h1>
                           <h3>{t(`${project.category}`)}</h3>
                         </div>

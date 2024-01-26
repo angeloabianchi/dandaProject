@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from "react";
 import "./Project.css";
 import { dataFetch } from "../../Components/DataFetch/DataFetch";
@@ -63,7 +64,7 @@ const Project = () => {
           <>
             <div className="project">
               <h1 className="title">
-                {project.name.replace(/-/g, " ").replace(/_/g, "-")}
+                {project.name.replace(/-/g, " ").replace(/_/g, "-").toUpperCase()}
               </h1>
               {project.client !== "" ? (
                 <p className="clientParagraph">

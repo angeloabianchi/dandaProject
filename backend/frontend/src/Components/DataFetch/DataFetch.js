@@ -9,7 +9,7 @@ const generateUrl = (type, id) => {
       return url;
     case "project":
       url += "dandaprojects/";
-      return (url += `${id}`);
+      return (url += `${id}/`);
     case "photos":
       url += "dandaprojects/";
       return (url += `${id}/projectphotos/`);
@@ -20,7 +20,6 @@ const generateUrl = (type, id) => {
 
 const dataFetch = async (type, id) => {
   const url = generateUrl(type, id);
-
   try {
     const response = await fetch(url, {
       method: "GET",
