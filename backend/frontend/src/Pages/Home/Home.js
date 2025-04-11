@@ -17,12 +17,14 @@ const Home = () => {
     const GetProjects = async () => {
       try {
         const data = await dataFetch("initial");
-        setProjects(data);
+        const sortedProjects = data.sort((a, b) => b.id - a.id); // Sort by ID descending
+        setProjects(sortedProjects);
         setDataLoaded(true);
       } catch (error) {
         console.error(`Error fetching data:`, error);
       }
     };
+
 
     const GetFrames = async () => {
       try {
