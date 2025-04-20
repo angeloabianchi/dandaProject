@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cad87a23.css",
+    "main.js": "/static/js/main.596bdda8.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/daniSancho2.jpeg": "/static/media/daniSancho2.bdd1eb223976e612d650.jpeg",
+    "static/media/daniSancho3.jpeg": "/static/media/daniSancho3.698cfe16298e0cbf6f18.jpeg",
+    "static/media/daniSancho4.jpeg": "/static/media/daniSancho4.c2f9528b12b7fbdcc54f.jpeg",
+    "static/media/daniSancho.jpeg": "/static/media/daniSancho.ee11ae4739f71d1021d2.jpeg",
+    "static/media/instagram.png": "/static/media/instagram.e6f6fb908601ba7a6fbc.png",
+    "static/media/DandaLogo2_500x500.png": "/static/media/DandaLogo2_500x500.0fbad3795b2f72a622cf.png",
+    "static/media/vimeo.png": "/static/media/vimeo.b3d528d947efaccd48a1.png",
+    "index.html": "/index.html",
+    "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.cad87a23.css.map": "/static/css/main.cad87a23.css.map",
+    "main.596bdda8.js.map": "/static/js/main.596bdda8.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cad87a23.css",
+    "static/js/main.596bdda8.js"
+  ]
+}
